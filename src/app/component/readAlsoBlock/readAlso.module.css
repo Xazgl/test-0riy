@@ -1,0 +1,159 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px;
+    height: 272px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.title {
+    display: flex;
+    justify-content: start;
+    color: #262626;
+    font-size: 28px;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 8px;
+    font-family: var(--font-roboto);
+}
+
+.cards {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+    height: 151px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.card {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #F2F2F2;
+    max-height: 100%;
+    width: calc((100% - 48px) / 4);
+    /* Рассчитываем ширину карточки */
+    padding: 12px 16px;
+}
+
+.cardHeader {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.newsType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 4px 8px;
+    background-color: #FF6B00;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family: var(--font-roboto);
+}
+
+
+.newsDate {
+    display: flex;
+    color: #474747;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.cardTitle {
+    display: flex;
+    flex-grow: 1;
+    max-height: 57px;
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: start;
+    font-family: var(--font-roboto);
+
+}
+
+.reaction {
+    display: flex;
+    gap: 8px;
+    height: 16px;
+    font-size: 14px;
+    color: #474747;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.emotion {
+    display: flex;
+    align-items: center;
+    color: #474747;
+    font-size: 14px;
+    font-family: var(--font-roboto);
+}
+
+.interactions {
+    display: flex;
+    color: #848484;
+    font-size: 12px;
+    font-weight: 400;
+    word-wrap: break-word;
+    align-items: center;
+    font-family: var(--font-roboto);
+}
+
+@media (max-width: 1440px) {
+
+    .background,
+    .cards,
+    .cardTitle,
+    .reaction {
+        height: auto;
+    }
+
+    .cardTitle {
+        max-height: none;
+        font-size: 14px;
+        align-items: center;
+    }
+
+    .card {
+        padding: 10px
+    }
+
+    .reaction {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: calc((100% - 48px) / 2);
+        /* Рассчитываем ширину карточки */
+    }
+}
+
+@media (max-width: 640px) {
+
+    .card {
+        width: calc((100%) / 1);
+        /* Рассчитываем ширину карточки */
+    }
+}

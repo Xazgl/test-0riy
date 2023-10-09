@@ -1,0 +1,47 @@
+.background {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slides {
+    display: flex;
+    gap:20px;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+}
+
+.slide {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    justify-content: start;
+    color: #262626;
+    font-size: 14px;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    white-space: nowrap;
+    width: auto;
+    padding: 5px 20px;
+    border-radius: 12px;
+    border: solid 1px  #262626ad;
+    color:#262626ad;
+    transition: all 0.5s;
+}
+
+.slide:hover {
+    background-color: #FF6B00;
+    color:white;
+    border-color: #FF6B00;
+}
+
+
+
+
+
+@media(max-width: 640px) {
+    .background {
+        display: flex;
+    }
+}
